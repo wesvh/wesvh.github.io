@@ -2,10 +2,22 @@
 	padding: 0;
 	margin: 0;
 }
+@property --myColor1 {
+	syntax: '<color>';
+	initial-value: black;
+	inherits: false;
+  }
+  
+  @property --myColor2 {
+	syntax: '<color>';
+	initial-value: black;
+	inherits: false;
+  }
 body {
-	background:#949494;
-    transition: background-color 1s linear 0s;
-    color:#ffffff;   
+	background: radial-gradient(circle at top,var(--myColor1), var(--myColor2));
+    transition: --myColor1 4s, --myColor2 0s;
+	color:#ffffff;   
+	
 }
 body::-webkit-scrollbar{
 width: 0px;
@@ -16,30 +28,29 @@ width: 0px;
 #headContenedor{
 	width: 220px;
 	margin: 0 auto;
+	
 }
 
 .item{
-    border:5px solid red;
     display: none;
 }
 /*Bombilla*/
 .bulb {
 	float: left;
-    transform: rotate(180deg);
+    transform: rotate(180deg);	
+	text-shadow: 0 0 20px #ffffff;	
 }
 .bulb i {
 	color:#000000;
 	font-size:220px;
-	transition:all 0.3s;
 }
 .bulb i.on {
 	color:#ffffff;
-	text-shadow: 0 0 100px #ffffff;
     font-size:220px;
-	transition:all 0.5s;
+	transition: all 1s;
 }
 .elipsis i{
-	color:#000000;
+	color:#000000;	
+	text-shadow: 0 0 20px #ffffff;
 	font-size:180px;
-	transition:all 0.3s;
 }
