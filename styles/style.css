@@ -1,10 +1,18 @@
 body {
 	background:#949494;
-	display:flex;
+    display: grid;
 	justify-content: center;
 	align-items: center;
     transition: background-color 1s linear 0s;
     color:#ffffff;
+}
+
+.contenedor{
+    border: 5px solid #ff0000;
+    display:grid;
+}
+.item{
+    border:5px solid red;
 }
 #text{
     display: none;
@@ -13,9 +21,10 @@ body {
     display:none;
 }
 /*Bombilla*/
-.bulb {    	
-	left: 50%;
-    right: 50%; 
+.bulb { 
+    display:grid;
+    left: 55%;
+    right: 55%;
 	top: 0; 
 	position:fixed;
     transform: rotate(180deg);
