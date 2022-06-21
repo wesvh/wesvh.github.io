@@ -1,3 +1,5 @@
+*{padding: 0;
+margin: 0;}
 body {
 	background:#949494;
     display: grid;
@@ -5,24 +7,22 @@ body {
 	align-items: center;
     transition: background-color 1s linear 0s;
     color:#ffffff;
+   
 }
 
 .contenedor{
+    margin: auto;
     border: 5px solid #ff0000;
     display:grid;
+    
 }
 .item{
     border:5px solid red;
-}
-#text{
     display: none;
 }
-#text1{
-    display:none;
-}
+
 /*Bombilla*/
-.bulb { 
-    display:grid;
+.bulb {
     left: 55%;
     right: 55%;
 	top: 0; 
@@ -32,12 +32,21 @@ body {
 }
 .bulb i {
 	color:#000000;
-	font-size:280px;
+	font-size:220px;
 	transition:all 0.3s;
 }
 .bulb i.on {
 	color:#ffffff;
 	text-shadow: 0 0 100px #ffffff;
-    font-size:280px;
+    font-size:220px;
 	transition:all 0.3s;
+}
+.elipsis{
+    position:fixed;
+    left: 65%;
+	top: 0;
+}
+.elipsis i{
+	color:#000000;
+	font-size:180px;
 }
