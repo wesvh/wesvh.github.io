@@ -2,14 +2,16 @@ var numero =0;
 
 function dioClick(){
     var body = document.getElementById("body");    
-    let bulb = document.querySelector("#light");    
+    let bulb = document.querySelector("#light");
         if(esPar(numero)){
+            document.getElementById("encendedor").style.color="#f7f7f7";
              body.style.backgroundColor ="black";
              bulb.classList.add("on");
                  for(i = 0 ; i<document.getElementsByClassName("item").length ; i++){
                       document.getElementsByClassName("item")[i].style.display="block"
                          }        } 
         else { 
+            document.getElementById("encendedor").style.color="black";
             body.style.backgroundColor ="#f7f7f7";
             bulb.classList.remove("on");
                 for(i = 0 ; i<document.getElementsByClassName("item").length ; i++){

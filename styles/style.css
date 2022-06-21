@@ -1,32 +1,35 @@
-*{padding: 0;
-margin: 0;}
+*{
+	padding: 0;
+	margin: 0;
+}
 body {
 	background:#949494;
     display: grid;
 	justify-content: center;
-	align-items: center;
     transition: background-color 1s linear 0s;
-    color:#ffffff;
-   
+    color:#ffffff;   
 }
-
+body::-webkit-scrollbar{
+width: 0px;
+}
+.headContenedor{
+	width: 220px;
+	height: 300px;
+}
 .contenedor{
-    margin: auto;
     border: 5px solid #ff0000;
-    display:grid;
     
 }
 .item{
     border:5px solid red;
     display: none;
 }
-
 /*Bombilla*/
 .bulb {
-    left: 55%;
-    right: 55%;
+    left: 50%;
+    right: 50%;
 	top: 0; 
-	position:fixed;
+	position:absolute;
     transform: rotate(180deg);
 	margin-bottom:50px;
 }
@@ -42,9 +45,8 @@ body {
 	transition:all 0.3s;
 }
 .elipsis{
-    position:fixed;
-    left: 65%;
-	top: 0;
+    position:absolute;
+    left: 55%;
 }
 .elipsis i{
 	color:#000000;
