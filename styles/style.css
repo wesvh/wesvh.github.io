@@ -4,34 +4,28 @@
 }
 body {
 	background:#949494;
-    display: grid;
-	justify-content: center;
     transition: background-color 1s linear 0s;
     color:#ffffff;   
 }
 body::-webkit-scrollbar{
 width: 0px;
 }
-.headContenedor{
-	width: 220px;
-	height: 300px;
-}
 .contenedor{
-    border: 5px solid #ff0000;
-    
+	display:grid;
 }
+#headContenedor{
+	width: 220px;
+	margin: 0 auto;
+}
+
 .item{
     border:5px solid red;
     display: none;
 }
 /*Bombilla*/
 .bulb {
-    left: 50%;
-    right: 50%;
-	top: 0; 
-	position:absolute;
+	float: left;
     transform: rotate(180deg);
-	margin-bottom:50px;
 }
 .bulb i {
 	color:#000000;
@@ -42,13 +36,10 @@ width: 0px;
 	color:#ffffff;
 	text-shadow: 0 0 100px #ffffff;
     font-size:220px;
-	transition:all 0.3s;
-}
-.elipsis{
-    position:absolute;
-    left: 55%;
+	transition:all 0.5s;
 }
 .elipsis i{
 	color:#000000;
 	font-size:180px;
+	transition:all 0.3s;
 }
