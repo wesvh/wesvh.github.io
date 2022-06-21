@@ -1,13 +1,28 @@
-<html>
+<html lang="es">
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1 "/>
-        <meta charset="ISO-8859-1 ">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="src/favicon.ico">
         <title>  Esteban Villada </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1 "http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        </head>
-<h1>Este es un sitio de prueba, pronto lo mejorare</h1>
-<p>Soy psicologo entusiasta de la programacion y el data science </p>
-<p><img src="https://i.imgur.com/rbZIuNs.gif"/> </p>
+        <script type="text/javascript">
+            function cambiaFondo(x){
+                console.log(x.value);
+
+                var body = document.getElementById("body");
+                body.style.backgroundColor =x.value;
+            }
+
+        </script>
+    </head>
+    <body id="body" style="background-color:#000000;">
+        <select name="fondo" id="fondo" onchange="cambiaFondo(this)">
+         <option value="black">black</option>
+        <option value="white">White</option>
+        </select>
+        <h1>Este es un sitio de prueba, pronto lo mejorare</h1>
+        <p>Soy psicologo entusiasta de la programacion y el data science </p>
+        <p><img src="https://i.imgur.com/rbZIuNs.gif"/> </p>
+    </body>
+
 </html>
