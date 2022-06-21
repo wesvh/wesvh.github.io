@@ -38,19 +38,22 @@ width: 0px;
 .bulb {
 	float: left;
     transform: rotate(180deg);	
-	text-shadow: 0 0 20px #ffffff;	
+	text-shadow: 0 0 20px #ffffff;
+	transition: all 1.4s;	
 }
 .bulb i {
 	color:#000000;
 	font-size:220px;
+	transition: all 1.4s;
 }
 .bulb i.on {
 	color:#ffffff;
     font-size:220px;
-	transition: all 1s;
+	transition: all 1.4s;
 }
 .elipsis i{
 	color:#000000;	
 	text-shadow: 0 0 20px #ffffff;
 	font-size:180px;
+	transition: all 0.4s;	
 }
