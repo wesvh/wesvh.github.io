@@ -7,17 +7,15 @@
 	initial-value: black;
 	inherits: false;
   }
-  
-  @property --myColor2 {
+@property --myColor2 {
 	syntax: '<color>';
 	initial-value: black;
 	inherits: false;
   }
 body {
 	background: radial-gradient(circle at top,var(--myColor1), var(--myColor2));
-    transition: --myColor1 4s, --myColor2 0s;
-	color:#ffffff;   
-	
+    transition: --myColor1 2.5s, --myColor2 0s;
+	color:#ffffff;  
 }
 body::-webkit-scrollbar{
 width: 0px;
@@ -26,12 +24,13 @@ width: 0px;
 	display:grid;
 }
 #headContenedor{
-	width: 220px;
+	width: 225px;
 	margin: 0 auto;
-	
 }
 
 .item{
+	text-align: center;
+	border: 1px solid #ff0000;
     display: none;
 }
 /*Bombilla*/
@@ -39,7 +38,6 @@ width: 0px;
 	float: left;
     transform: rotate(180deg);	
 	text-shadow: 0 0 20px #ffffff;
-	transition: all 1.4s;	
 }
 .bulb i {
 	color:#000000;
@@ -52,8 +50,17 @@ width: 0px;
 	transition: all 1.4s;
 }
 .elipsis i{
+	margin-left: 15px;
 	color:#000000;	
 	text-shadow: 0 0 20px #ffffff;
 	font-size:180px;
 	transition: all 0.4s;	
+}
+#encendedor{
+	cursor:pointer;
+	
+	transition: all 0.6s;	
+}
+#encendedor:hover{
+	margin-top: 15px;	
 }
