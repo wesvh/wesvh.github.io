@@ -30,8 +30,11 @@ width: 0px;
 
 .item{
 	text-align: center;
-	border: 1px solid #ff0000;
+	border: 1px solid #7050f0;
     display: none;
+	font-family: 'Lucida Sans';
+	margin: 3 3 0 3;
+	padding: 15;
 }
 /*Bombilla*/
 .bulb {
