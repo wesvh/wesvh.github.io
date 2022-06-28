@@ -8,19 +8,20 @@ function dioClick(){
     let bulb = document.querySelector("#light");
         if(esPar(numero)){
             document.getElementById("encendedor").style.color="#f7f7f7";
-             body.style="--myColor1: #CBCBCB ; --myColor2: 	#000000;";
-             bulb.classList.add("on");
-                 for(i = 0 ; i<document.getElementsByClassName("item").length ; i++){
-                      document.getElementsByClassName("item")[i].style.display="block"
-                         }   } 
+            body.style="--myColor1: #CBCBCB ; --myColor2: 	#000000;";
+            bulb.classList.add("on");
+                for(i = 0 ; i<document.getElementsByClassName("item").length ; i++){
+                    document.getElementsByClassName("item")[i].style.display="block"
+                }
+        } 
         else { 
             document.getElementById("encendedor").style.color="black";
             body.style="--myColor1: #000000 ; --myColor2: 	#000000;"
             bulb.classList.remove("on");
                 for(i = 0 ; i<document.getElementsByClassName("item").length ; i++){
-                        document.getElementsByClassName("item")[i].style.display="none"
-                        }       
-                    }
+                    document.getElementsByClassName("item")[i].style.display="none"
+                }       
+            }
 numero++;
 }
 function esPar(numero){
